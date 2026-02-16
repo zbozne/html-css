@@ -1,0 +1,33 @@
+    @charset "UTF-8";
+
+/*em HTML id= em css # */
+/*em HTML class= em css . */
+
+    body {
+        background-color: rgb(140, 172, 108);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    h1 {
+        color: darkcyan;
+   }
+h1#principal {
+    color: rgb(0, 162, 255);
+    text-align: center;
+  }
+
+  h2 {
+    color: darkgreen;
+  }
+
+.basico {
+    color: blue;
+}
+
+.inter {
+    color: orange;
+}
+
+.avan {
+    color: red;
+}

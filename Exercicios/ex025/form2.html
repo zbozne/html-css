@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 2</title>
+    <style>
+        #enviar {
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            width: 150px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.php">
+        <p>
+        <label for="isu"> Usuario:</label>
+            <input type="text" name="usu" id="isu" required minlength="3" size="10" placeholder="Usuario">
+        </p>
+        <p>
+            <label for="isen"> Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" size="10">
+            <p>
+                <input type="submit" value="Enviar" id="enviar">
+            </p>
+        </p>
+    </form>
+</body>
+</html>

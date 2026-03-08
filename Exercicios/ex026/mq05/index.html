@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media querry</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+       <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opcao 1</a></li>
+                <li><a href="#">Opcao 2</a></li>
+                <li><a href="#">Opcao 3</a></li>
+                <li><a href="#">Opcao 4</a></li>
+                <li><a href="#">Opcao 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Por que mobile first faz sentido hoje?</h2>
+                <p>Mais de 60% do tráfego da internet vem de dispositivos móveis. Isso significa que a maioria das pessoas que vão acessar seu projeto provavelmente estão no celular. Começar pelo mobile não é só uma boa prática 
+            técnica — é uma decisão estratégica que coloca o usuário real no centro do desenvolvimento.</p>
+            <h2>Como isso muda sua forma de pensar o CSS?</h2>
+                <p>Quando você escreve CSS mobile first, seus estilos base são simples e diretos: uma coluna, fontes legíveis, botões com área de toque adequada. À medida que a tela cresce, você vai adicionando complexidade com min-width. Isso cria um código mais limpo e previsível, porque você está construindo de baixo para cima — do simples para o complexo — em vez de ficar "consertando" um layout grande para caber em telas pequenas.</p>
+            <h2>O impacto na performance</h2>
+                <p>Dispositivos móveis geralmente têm conexões mais lentas e menos poder de processamento. Ao pensar mobile first, você naturalmente evita carregar recursos pesados desnecessários — imagens gigantes, animações complexas, fontes demais. O resultado é um site mais rápido para todo mundo, não só para mobile.<p>
+            <h2>Na prática, para um projeto simples</h2>
+            <p>Imagine um portfólio básico. Mobile first significa: primeiro você faz os cards de projeto empilhados em coluna, o menu vira um hambúrguer, e o texto tem tamanho confortável para leitura no polegar. Só depois você abre o layout em duas ou três colunas para desktop com um @media (min-width: 768px). Essa ordem de raciocínio te poupa retrabalho e torna o código muito mais fácil de manter.</p>
+            <h2>Um erro comum de quem está aprendendo</h2>
+            <p>Muitos devs iniciantes escrevem todo o CSS pensando no desktop e depois tentam "espremer" tudo para mobile com max-width. Isso gera gambiarras, código duplicado e layouts quebrados. Quando você inverte essa lógica e começa pelo menor, percebe que a maioria dos problemas de responsividade simplesmente não aparecem.</p>
+        </article>
+    </main>
+      
+<script>
+    function clickMenu () {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block  '
+            }
+
+    }
+</script>
+</body>
+</html>

@@ -17,11 +17,31 @@ header {
     background-color: gray;
     color: white;
     padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    flex: 0 0 200px;
+}
+
+header > nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header > nav > a {
+    color: white;
+    padding: 7px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
 }
 
 main {
     background-color: white;
-    margin: 5px;
     padding: 5px;
     border-radius: 10px;
     max-width: 500px;

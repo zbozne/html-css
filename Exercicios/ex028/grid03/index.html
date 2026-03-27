@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.container {
+            border: 3px solid purple;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 80px 80px 80px;
+            grid-auto-rows: 80px;
+            gap: 10px;
+            place-items: start stretch;
+            place-content: center stretch;
+        }
+
+        .item {
+            border: 3px solid orange;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
